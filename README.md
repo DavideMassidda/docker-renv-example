@@ -1,4 +1,4 @@
-# Building a Docker container using renv
+# Building a Docker container with renv
 
 This repository includes a simple example of using RStudio and the `renv` package for R with Docker containers.
 
