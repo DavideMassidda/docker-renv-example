@@ -32,7 +32,7 @@ These operations will create inside the project directory:
 
 Open the terminal and go to the project directory.
 
-As a first step, you need to build an image, which we can name "toy_image":
+As a first step, you need to build an image, which we can name "wine_image":
 
 ```
 docker build -t wine_image .
@@ -41,7 +41,7 @@ docker build -t wine_image .
 Afterward, you can run the container in your machine:
 
 ```
-docker run --name wine_container -p 8787:8787 -e DISABLE_AUTH=true toy_image
+docker run --name wine_container -p 8787:8787 -e DISABLE_AUTH=true wine_image
 ```
 
 Since you are working in a private environment, authentication is not required, then it can be disabled.
