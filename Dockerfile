@@ -5,4 +5,4 @@ WORKDIR /home/rstudio/test_docker/
 COPY . .
 RUN chown -R rstudio:rstudio /home/rstudio/
 ENV RENV_PATHS_CACHE /home/rstudio/.cache/R/renv
-RUN R --vanilla -e "renv::restore()"
+RUN R --no-init-file -e "renv::restore()"
